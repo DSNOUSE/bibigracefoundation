@@ -1,6 +1,6 @@
 # Bibi Grace Foundation Website
 
-This repository contains the official web app for **Bibi Grace Foundation**, a registered non profit organisation that provides quality education, materials, and financial support to children and youths (in and out of school), alongside innovative schemes that help them become self-reliant.
+This repository contains the official web app for **Bibi Grace Foundation**, a registered nonprofit organisation that provides quality education, materials, and financial support to children and youths (in and out of school), alongside innovative schemes that help them become self-reliant.
 
 ## Tech Stack
 

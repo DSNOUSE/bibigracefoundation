@@ -25,7 +25,7 @@ export default function Home() {
         <p className={styles.kicker}>Bibi Grace Foundation</p>
         <h1>Expanding access to quality education and opportunity.</h1>
         <p>
-          Bibi Grace Foundation is a registered non profit organisation that
+          Bibi Grace Foundation is a registered nonprofit organisation that
           provides quality education, learning materials, and financial support
           to children and youths in and out of school.
         </p>
