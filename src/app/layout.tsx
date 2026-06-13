@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Bibi Grace Foundation — Every Child Matters",
   description:
     "Bibi Grace Foundation is a registered nonprofit organisation supporting children and youth with education, materials, and financial assistance.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -17,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body className={`${nunito.variable} ${caveat.variable}`}>{children}</body>
     </html>
   );

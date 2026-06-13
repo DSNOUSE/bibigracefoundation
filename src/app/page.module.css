@@ -147,7 +147,11 @@
 /* ===== HERO ===== */
 .hero {
   position: relative;
-  padding: 12rem 1.5rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 85vh;
+  padding: 10rem 1.5rem 4rem;
   background: var(--purple-deep);
   color: var(--white);
   text-align: center;
@@ -265,13 +269,13 @@
 .aboutImgMain {
   grid-column: 1 / -1;
   border-radius: 12px;
-  background: url('/village-children.jpg') center / cover no-repeat;
+  background: url('/about-main.jpg') center / cover no-repeat;
   min-height: 280px;
 }
 
 .aboutImgSecondary {
   border-radius: 12px;
-  background: url('/givin-gift.jpg') center / cover no-repeat;
+  background: url('/about-secondary.jpg') center / cover no-repeat;
   min-height: 150px;
 }
 
@@ -397,6 +401,8 @@
 .cardImage {
   height: 200px;
   background: linear-gradient(135deg, var(--purple-deep), var(--teal-dark));
+  background-size: cover;
+  background-position: center;
   position: relative;
   display: flex;
   align-items: flex-start;
