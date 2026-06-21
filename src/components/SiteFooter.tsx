@@ -10,8 +10,8 @@ export default function SiteFooter() {
           <Image
             src="/logo.png"
             alt="Bibi Grace Foundation"
-            width={60}
-            height={42}
+            width={120}
+            height={85}
             style={{ width: "auto", height: "auto" }}
             className={styles.logoImg}
           />

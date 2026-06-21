@@ -35,8 +35,8 @@ export default function SiteHeader() {
             <Image
               src="/logo.png"
               alt="Bibi Grace Foundation"
-              width={48}
-              height={34}
+              width={96}
+              height={68}
               style={{ width: "auto", height: "auto" }}
               className={styles.logoImg}
             />

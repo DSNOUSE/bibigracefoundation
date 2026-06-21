@@ -1,5 +1,6 @@
 .page {
-  padding-top: 124px;
+  padding-top: 140px;
+  padding-bottom: 4rem;
   background: #efefef;
 }
 
@@ -10,7 +11,7 @@
 }
 
 .panelLeft {
-  padding: 2.8rem 2.8rem 3rem;
+  padding: 3.5rem 3.5rem 4rem;
   background: #efefef;
 }
 
@@ -45,89 +46,102 @@
   max-width: 620px;
 }
 
-.modeSwitch {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.donorForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 620px;
+  margin-top: 2rem;
 }
 
-.modeBtn,
-.modeActive {
-  border: 0;
-  cursor: pointer;
-  padding: 1rem;
-  color: #fff;
-  font-size: 1.45rem;
-  font-weight: 700;
-}
-
-.modeBtn {
-  background: #64676c;
-}
-
-.modeActive {
-  background: #2f3135;
-}
-
-.widgetBody {
-  padding: 1rem;
-}
-
-.question {
-  color: #fff;
-  margin-bottom: 0.75rem;
-  font-size: 1.1rem;
-  font-weight: 700;
-}
-
-.amountGrid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0.14rem;
-  margin-bottom: 0.85rem;
-}
-
-.amountBtn,
-.amountActive {
-  border: 0;
-  cursor: pointer;
-  min-height: 3.1rem;
-  font-size: 1.03rem;
-  font-weight: 700;
-}
-
-.amountBtn {
-  background: #6f7378;
-  color: #fff;
-}
-
-.amountActive {
-  background: #fff;
-  color: #23252b;
-}
-
-.paymentRow {
-  display: grid;
+.formGroup {
+  display: flex;
+  flex-direction: column;
   gap: 0.5rem;
-  grid-template-columns: 1fr 1fr;
 }
 
-.cardBtn,
-.paypalBtn {
-  min-height: 3.45rem;
-  border: 0;
-  cursor: pointer;
-  font-size: 1.35rem;
-  font-weight: 800;
+.formLabel {
+  font-weight: 600;
+  color: #28282d;
+  font-size: 0.95rem;
 }
 
-.cardBtn {
-  background: #d1302f;
+.formInput {
+  padding: 0.85rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #2f3135;
+}
+
+.submitBtn {
+  padding: 1rem 2rem;
+  background: #2f3135;
   color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 
-.paypalBtn {
-  background: #fff;
-  color: #21458a;
+.submitBtn:hover {
+  background: #1a1c1e;
+}
+
+.accountInfo {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 620px;
+  margin-top: 2rem;
+}
+
+.accountTitle {
+  font-size: 1.5rem;
+  color: #28282d;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.accountDesc {
+  color: #4a4a52;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.accountNumberBox {
+  background: #2f3135;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.accountNumber {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.accountBank {
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.accountNote {
+  color: #4a4a52;
+  line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 .panelRight {
@@ -141,7 +155,8 @@
 
 @media (max-width: 1080px) {
   .page {
-    padding-top: 112px;
+    padding-top: 140px;
+    padding-bottom: 3rem;
   }
 
   .split {
@@ -167,17 +182,11 @@
     font-size: clamp(1.8rem, 9.4vw, 2.8rem);
   }
 
-  .amountGrid {
-    grid-template-columns: 1fr 1fr;
+  .accountNumber {
+    font-size: 1.5rem;
   }
 
-  .modeBtn,
-  .modeActive {
-    font-size: 1.2rem;
-  }
-
-  .cardBtn,
-  .paypalBtn {
-    font-size: 1.15rem;
+  .accountTitle {
+    font-size: 1.25rem;
   }
 }

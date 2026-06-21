@@ -90,7 +90,7 @@ export default function Home() {
       <nav className={styles.nav}>
         <div className={styles.navInner}>
           <Link href="/" className={styles.logo}>
-            <Image src="/logo.png" alt="Bibi Grace Foundation" width={48} height={34} style={{ width: "auto", height: "auto" }} className={styles.logoImg} />
+            <Image src="/logo.png" alt="Bibi Grace Foundation" width={96} height={68} style={{ width: "auto", height: "auto" }} className={styles.logoImg} />
             <span className={styles.logoText}>Bibi Grace Foundation</span>
           </Link>
           <ul className={styles.navLinks}>
@@ -107,13 +107,32 @@ export default function Home() {
 
       {/* Hero Section */}
       <header className={styles.hero}>
-        <Image
-          src="/landing.jpg"
-          alt=""
-          fill
-          priority
-          className={styles.heroBg}
-        />
+        <div className={styles.heroCarousel}>
+          <div className={styles.heroSlide}>
+            <Image
+              src="/landing.jpg"
+              alt=""
+              fill
+              priority
+            />
+          </div>
+          <div className={styles.heroSlide}>
+            <Image
+              src="/landingBibiGraceFoundation.jpg"
+              alt=""
+              fill
+              priority
+            />
+          </div>
+          <div className={styles.heroSlide}>
+            <Image
+              src="/children.jpg"
+              alt=""
+              fill
+              priority
+            />
+          </div>
+        </div>
         <div className={styles.heroOverlay} />
         <div className={styles.heroContent}>
           <p className={styles.kicker}><Sparkles size={16} /> Every Child Matters</p>
@@ -260,7 +279,7 @@ export default function Home() {
       <footer className={styles.footer} id="contact">
         <div className={styles.footerInner}>
           <div className={styles.footerBrand}>
-            <Image src="/logo.png" alt="Bibi Grace Foundation" width={60} height={42} style={{ width: "auto", height: "auto" }} className={styles.logoImg} />
+            <Image src="/logo.png" alt="Bibi Grace Foundation" width={120} height={85} style={{ width: "auto", height: "auto" }} className={styles.logoImg} />
             <p>Bibi Grace Foundation — Every Child Matters</p>
             <div className={styles.socials}>
               <a href="https://www.facebook.com/Bibigracefoundation/" aria-label="Facebook">
