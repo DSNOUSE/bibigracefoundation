@@ -139,6 +139,8 @@
   border-radius: 999px;
   font-weight: 700;
   font-size: 0.95rem;
+  white-space: nowrap;
+  width: 100%;
 }
 
 .ctaPrimary {
@@ -204,5 +206,11 @@
   .hero {
     padding-top: 3.7rem;
     padding-bottom: 2.7rem;
+  }
+
+  .ctaPrimary,
+  .ctaSecondary {
+    font-size: 0.85rem;
+    padding: 0.7rem 1rem;
   }
 }
