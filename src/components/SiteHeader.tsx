@@ -1,9 +1,14 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, Menu, X } from "lucide-react";
 import styles from "../app/page.module.css";
 
 export default function SiteHeader() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <>
       <div className={styles.topBar}>
@@ -42,6 +47,7 @@ export default function SiteHeader() {
             />
             <span className={styles.logoText}>Bibi Grace Foundation</span>
           </Link>
+
           <ul className={styles.navLinks}>
             <li>
               <Link href="/about">About</Link>
@@ -56,9 +62,49 @@ export default function SiteHeader() {
               <Link href="/contact">Contact</Link>
             </li>
           </ul>
+
           <Link href="/donate" className={styles.donateBtn}>
             Donate Now
           </Link>
+
+          <button
+            className={styles.mobileMenuBtn}
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+            aria-expanded={mobileMenuOpen}
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+
+        <div className={`${styles.mobileMenu} ${mobileMenuOpen ? styles.open : ""}`}>
+          <ul className={styles.mobileNavLinks}>
+            <li>
+              <Link href="/about" onClick={() => setMobileMenuOpen(false)}>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link href="/programs" onClick={() => setMobileMenuOpen(false)}>
+                Programs
+              </Link>
+            </li>
+            <li>
+              <Link href="/impact" onClick={() => setMobileMenuOpen(false)}>
+                Impact
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
+                Contact
+              </Link>
+            </li>
+            <li className={styles.mobileDonateItem}>
+              <Link href="/donate" onClick={() => setMobileMenuOpen(false)} className={styles.mobileDonateLink}>
+                Donate Now
+              </Link>
+            </li>
+          </ul>
         </div>
       </nav>
     </>
