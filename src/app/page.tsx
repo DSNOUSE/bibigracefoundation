@@ -3,7 +3,6 @@ import Link from "next/link";
 import {
   BookOpen,
   ArrowUpRight,
-  Sparkles,
   HandHeart,
 } from "lucide-react";
 import SiteHeader from "../components/SiteHeader";
@@ -44,9 +43,9 @@ const programs = [
 ];
 
 const stats = [
-  { value: "250+", label: "Children Supported" },
+  { value: "20+", label: "Communities Reached" },
   { value: "15+", label: "Programs Delivered" },
-  { value: "5+", label: "Communities Reached" },
+  { value: "250+", label: "Children Supported" },
 ];
 
 export default function Home() {
@@ -84,7 +83,7 @@ export default function Home() {
         </div>
         <div className={styles.heroOverlay} />
         <div className={styles.heroContent}>
-          <p className={styles.kicker}><Sparkles size={16} /> Every Child Matters</p>
+          <p className={styles.kicker}>Every Child Matters</p>
           <h1>
             Helping Each Other Make{" "}
             <span className={styles.highlight}>Better</span> Today
@@ -112,12 +111,12 @@ export default function Home() {
             <div className={styles.aboutImgMain} />
             <div className={styles.aboutImgSecondary} />
             <div className={styles.statsCard}>
-              <span className={styles.statsValue}>250+</span>
-              <span className={styles.statsLabel}>Children We Support</span>
+              <span className={styles.statsValue}>20+</span>
+              <span className={styles.statsLabel}>Communities Reached</span>
             </div>
           </div>
           <div className={styles.aboutContent}>
-            <p className={styles.kicker}><Sparkles size={16} /> About Our Mission</p>
+            <p className={styles.kicker}>About Our Mission</p>
             <h2>
               Helping Each Other Can Make{" "}
               <span className={styles.highlight}>World</span> Better
@@ -153,7 +152,7 @@ export default function Home() {
 
         {/* Programs / Causes Section */}
         <section className={styles.programs} id="programs">
-          <p className={styles.kicker}><Sparkles size={16} /> Our Programs</p>
+          <p className={styles.kicker}>Our Programs</p>
           <h2>
             Be The Reason for Someone&apos;s{" "}
             <span className={styles.highlight}>Smile</span>
@@ -196,7 +195,7 @@ export default function Home() {
         <section className={styles.ctaBanner} id="donate">
           <div className={styles.ctaBannerOverlay} />
           <div className={styles.ctaBannerContent}>
-            <p className={styles.kicker}><Sparkles size={16} /> Support Our Cause</p>
+            <p className={styles.kicker}>Support Our Cause</p>
             <h2>Children Need Your Help By Donating Today</h2>
             <div className={styles.heroCtas}>
               <Link href="/programs" className={styles.ctaPrimary}>
@@ -211,7 +210,7 @@ export default function Home() {
 
         {/* Impact Stats */}
         <section className={styles.impact} id="impact">
-          <p className={styles.kicker}><Sparkles size={16} /> Our Impact</p>
+          <p className={styles.kicker}>Our Impact</p>
           <h2>Making A Difference Together</h2>
           <div className={styles.statsGrid}>
             {stats.map((stat) => (

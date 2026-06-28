@@ -166,7 +166,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 .mobileMenu.open {
@@ -192,7 +192,7 @@
   bottom: 0;
   width: 85%;
   max-width: 400px;
-  background: linear-gradient(135deg, var(--purple-deep), var(--teal-dark));
+  background: #5F236B;
   transform: translateX(100%);
   transition: transform 0.3s ease;
   overflow-y: auto;

@@ -27,16 +27,16 @@ export default function ImpactPage() {
           <h2 className={styles.sectionTitle}>Impact Snapshot</h2>
           <div className={styles.statGrid}>
             <div className={styles.statItem}>
-              <span className={styles.statValue}>250+</span>
-              <span className={styles.statLabel}>Children Supported</span>
+              <span className={styles.statValue}>20+</span>
+              <span className={styles.statLabel}>Communities Reached</span>
             </div>
             <div className={styles.statItem}>
               <span className={styles.statValue}>15+</span>
               <span className={styles.statLabel}>Programs Delivered</span>
             </div>
             <div className={styles.statItem}>
-              <span className={styles.statValue}>5+</span>
-              <span className={styles.statLabel}>Communities Reached</span>
+              <span className={styles.statValue}>250+</span>
+              <span className={styles.statLabel}>Children Supported</span>
             </div>
             <div className={styles.statItem}>
               <span className={styles.statValue}>1000+</span>
